@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marcel Miel | Le goût authentique du miel</title>
+<meta name="description" content="Découvrez Marcel Miel, notre univers autour du miel et nos produits gourmands.">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Georgia, serif;
+  background: #fffaf0;
+  color: #49331d;
+  line-height: 1.6;
+}
+header {
+  background: #f3d58d;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo { font-size: 27px; font-weight: bold; color: #613d16; }
+nav a {
+  color: #613d16;
+  text-decoration: none;
+  margin-left: 20px;
+  font-family: Arial, sans-serif;
+}
+.hero {
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg,#f6dfaa,#eabf60);
+}
+.hero h1 { font-size: clamp(38px,6vw,65px); margin-bottom: 15px; }
+.hero p { font-size: 20px; max-width: 550px; }
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  background: #70451c;
+  color: white;
+  padding: 13px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+section { padding: 70px 8%; text-align: center; }
+h2 { font-size: 34px; margin-bottom: 20px; }
+.intro { max-width: 750px; margin: auto; }
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 25px;
+  margin-top: 35px;
+}
+.product {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px #0000000d;
+}
+.photo {
+  background: #f5e5c4;
+  min-height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: #795426;
+  margin-bottom: 15px;
+  font-family: Arial,sans-serif;
+}
+.story { background: #f4e5c6; }
+.contact { background: #fffaf0; }
+footer {
+  background: #593819;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  font-family: Arial,sans-serif;
+}
+footer a { color: #f3d58d; }
+@media(max-width:600px) {
+  header { justify-content: center; gap: 15px; }
+  nav a { margin: 0 7px; font-size: 13px; }
+  section { padding: 50px 6%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🍯 Marcel Miel</div>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#miels">Nos miels</a>
+    <a href="#histoire">Notre histoire</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+  <h1>Bienvenue chez Marcel Miel</h1>
+  <p>Le plaisir du miel, la douceur de la nature et le goût de l'authenticité.</p>
+  <a class="btn" href="#miels">Découvrir nos miels</a>
+</section>
+
+<section>
+  <div class="intro">
+    <h2>Bienvenue dans notre univers 🍯</h2>
+    <p>Chez Marcel Miel, nous aimons faire découvrir le miel et ses saveurs.
+    Retrouvez ici notre entreprise, nos produits et notre passion pour cet
+    trésor de la nature.</p>
+  </div>
+</section>
+
+<section id="miels" style="background:#f9f0df">
+  <h2>Nos miels</h2>
+  <p>Découvrez notre sélection de produits.</p>
+  <div class="products">
+    <article class="product">
+      <div class="photo">Votre photo de miel ici</div>
+      <h3>Miel de fleurs</h3>
+      <p>Découvrez notre miel de fleurs.</p>
+    </article>
+    <article class="product">
+      <div class="photo">Votre photo de miel ici</div>
+      <h3>Miel de montagne</h3>
+      <p>Découvrez notre miel de montagne.</p>
+    </article>
+    <article class="product">
+      <div class="photo">Votre photo de miel ici</div>
+      <h3>Nos autres miels</h3>
+      <p>Retrouvez les autres variétés disponibles.</p>
+    </article>
+  </div>
+</section>
+
+<section class="story" id="histoire">
+  <h2>Notre histoire</h2>
+  <div class="intro">
+    <div class="photo">Votre photo d'entreprise ici</div>
+    <p>Marcel Miel est une entreprise dédiée à la vente de miel.
+    Nous souhaitons partager avec vous notre passion pour les saveurs
+    du miel et les plaisirs gourmands.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contactez Marcel Miel</h2>
+  <p>Une question sur nos produits ? Envie de découvrir nos miels ?</p>
+  <p style="margin-top:15px">📧 Votre adresse e-mail à ajouter</p>
+  <p>📞 Votre numéro de téléphone à ajouter</p>
+  <p>📍 Votre adresse à ajouter</p>
+</section>
+</main>
+
+<footer>
+  <p>🍯 Marcel Miel</p>
+  <p>Le goût authentique de la nature.</p>
+  <p>© 2026 Marcel Miel - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
