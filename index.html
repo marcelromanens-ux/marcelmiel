@@ -74,6 +74,7 @@ h2 { font-size: 34px; margin-bottom: 20px; }
   color: #795426;
   margin-bottom: 15px;
   font-family: Arial,sans-serif;
+  overflow: hidden;
 }
 .story { background: #f4e5c6; }
 .contact { background: #fffaf0; }
@@ -85,6 +86,12 @@ footer {
   font-family: Arial,sans-serif;
 }
 footer a { color: #f3d58d; }
+.bougie-art {
+  width: 100%;
+  height: 170px;
+  display: block;
+  border-radius: 12px;
+}
 @media(max-width:600px) {
   header { justify-content: center; gap: 15px; }
   nav a { margin: 0 7px; font-size: 13px; }
@@ -125,6 +132,81 @@ footer a { color: #f3d58d; }
   <p>Découvrez notre sélection de produits.</p>
   <div class="products">
     <article class="product">
+      <div class="photo">
+        <svg class="bougie-art" viewBox="0 0 220 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bougie en cire d'abeille en forme de hibou">
+          <defs>
+            <linearGradient id="bg1" x1="0" x2="1">
+              <stop offset="0%" stop-color="#785026"/>
+              <stop offset="100%" stop-color="#3c2518"/>
+            </linearGradient>
+            <linearGradient id="wax" x1="0" x2="1">
+              <stop offset="0%" stop-color="#f4c882"/>
+              <stop offset="100%" stop-color="#d38d4d"/>
+            </linearGradient>
+            <linearGradient id="wax2" x1="0" x2="1">
+              <stop offset="0%" stop-color="#f2b665"/>
+              <stop offset="100%" stop-color="#c67e41"/>
+            </linearGradient>
+          </defs>
+          <rect width="220" height="170" fill="url(#bg1)"/>
+          <g opacity="0.75">
+            <circle cx="35" cy="32" r="18" fill="#6d4023"/>
+            <circle cx="86" cy="28" r="16" fill="#7a4928"/>
+            <circle cx="190" cy="25" r="19" fill="#6a3e22"/>
+          </g>
+          <g>
+            <path d="M24 122 L32 80 L58 80 L66 122 Z" fill="#b76c3d" opacity="0.9"/>
+            <path d="M155 118 L162 84 L188 84 L194 118 Z" fill="#b76c3d" opacity="0.8"/>
+          </g>
+          <g>
+            <g transform="translate(42,10)">
+              <path d="M40 20 C60 5, 100 5, 120 20 L118 76 C118 102, 103 118, 80 118 C58 118, 42 102, 42 76 Z" fill="url(#wax)"/>
+              <circle cx="58" cy="50" r="12" fill="#8d4d26"/>
+              <circle cx="100" cy="50" r="12" fill="#8d4d26"/>
+              <circle cx="58" cy="50" r="6" fill="#f0d6a0"/>
+              <circle cx="100" cy="50" r="6" fill="#f0d6a0"/>
+              <path d="M58 70 Q80 85 102 70" stroke="#a65f2d" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <circle cx="80" cy="82" r="12" fill="#d89b57"/>
+              <path d="M40 83 L22 100 L32 116 L58 112 L62 95 Z" fill="url(#wax2)"/>
+              <path d="M118 83 L138 100 L128 116 L102 112 L100 95 Z" fill="url(#wax2)"/>
+              <path d="M58 118 L25 135 L30 150 L80 150 L82 118 Z" fill="url(#wax)"/>
+              <path d="M102 118 L137 135 L132 150 L80 150 L80 118 Z" fill="url(#wax)"/>
+              <g opacity="0.55">
+                <circle cx="12" cy="98" r="6" fill="#e9b36d"/>
+                <circle cx="148" cy="96" r="6" fill="#e9b36d"/>
+                <circle cx="80" cy="142" r="10" fill="#e3a85b"/>
+              </g>
+            </g>
+          </g>
+          <g>
+            <g transform="translate(150,28)">
+              <path d="M0 0 C18 -12, 48 -10, 64 8 L62 54 C62 78, 52 92, 32 92 C12 92, 0 78, 0 54 Z" fill="url(#wax)"/>
+              <circle cx="20" cy="32" r="8" fill="#8d4d26"/>
+              <circle cx="42" cy="32" r="8" fill="#8d4d26"/>
+              <circle cx="20" cy="32" r="4" fill="#f0d6a0"/>
+              <circle cx="42" cy="32" r="4" fill="#f0d6a0"/>
+            </g>
+            <g transform="translate(26,76)">
+              <path d="M0 0 C18 -12, 48 -10, 64 8 L62 54 C62 78, 52 92, 32 92 C12 92, 0 78, 0 54 Z" fill="url(#wax)"/>
+              <circle cx="20" cy="32" r="8" fill="#8d4d26"/>
+              <circle cx="42" cy="32" r="8" fill="#8d4d26"/>
+              <circle cx="20" cy="32" r="4" fill="#f0d6a0"/>
+              <circle cx="42" cy="32" r="4" fill="#f0d6a0"/>
+            </g>
+          </g>
+          <g>
+            <rect x="57" y="10" width="5" height="30" fill="#f2f1ec" rx="2"/>
+            <rect x="122" y="12" width="5" height="28" fill="#f2f1ec" rx="2"/>
+            <rect x="176" y="25" width="5" height="24" fill="#f2f1ec" rx="2"/>
+          </g>
+        </svg>
+      </div>
+      <h3>Bougie</h3>
+      <p>Prix à l'unité.</p>
+      <p><strong>10 CHF</strong></p>
+    </article>
+
+    <article class="product">
       <div class="photo">Votre photo de miel ici</div>
       <h3>Miel de printemps</h3>
       <p>Pot de miel de printemps de 250 g.</p>
@@ -147,12 +229,6 @@ footer a { color: #f3d58d; }
       <h3>Petit pot de miel</h3>
       <p>Un pot de miel de 50 g.</p>
       <p><strong>4 CHF</strong></p>
-    </article>
-    <article class="product">
-      <div class="photo">Bougie</div>
-      <h3>Bougie</h3>
-      <p>Prix à l'unité.</p>
-      <p><strong>10 CHF</strong></p>
     </article>
   </div>
 </section>
